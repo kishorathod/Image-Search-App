@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 34px;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0px 25px 0px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+#serchInput {
+  width: 25%;
+  max-width: 250px;
+  padding: 5px 10px;
+  border: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+}
+
+#searchButton {
+  padding: 5px 10px;
+  background-color: #138065;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.searchResults {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.search-Result {
+  margin-bottom: 25px;
+  width: 30%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.search-Result img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.search-Result:hover img {
+  opacity: 0.8;
+}
+
+.search-Result a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 5px;
+  text-transform: capitalize;
+}
+
+#showMoreButton {
+  background-color: #008cba;
+  font-size: 18px;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  display: none;
+  border-radius: 5px;
+  margin: 15px auto;
+  cursor: pointer;
+  /* display: block; */
+}
+
+@media screen and (max-width: 768px) {
+    .search-Result{
+      padding: 20px;
+        width: 45%;
+     }
+}
+
+@media screen and (max-width: 480px) {
+  .search-Result{
+    width: 100%;
+ }
+}
+
